@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
     const navigate = useNavigate()
 
     const loginUser = async (email, password) => {
-        let url = "http://127.0.0.1:8000/api/token/"
+        let url = "http://192.168.137.244:8000/api/token/"
         const response = await fetch(url,{
             method: "POST",
             headers: {
@@ -66,7 +66,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const registerUser = async (full_name, email, username, password, password2) => {
-        let url = "http://127.0.0.1:8000/api/register/"
+        let url = "http://192.168.137.244:8000/api/register/"
         const response = await fetch(url,{
             method: "POST",
             headers: {
